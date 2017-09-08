@@ -47,7 +47,7 @@ BOOL CteamtalkApp::InitInstance()
 	}
 	AfxEnableControlContainer();
 
-	if (_IsHaveInstance())
+	if (_IsHaveInstance()) //判断客户端单一实例
 	{
 		LOG__(ERR, _T("Had one instance,this will exit"));
 		HWND hwndMain = FindWindow(_T("TeamTalkMainDialog"), NULL);
